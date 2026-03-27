@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Billing - Hope AI</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+<link rel="stylesheet" href="..\static\css\home.css">
+<link rel="stylesheet" href="..\static\css\register.css">
+<link rel="stylesheet" href="..\static\css\style.css">
+</head>
+<body class="dark">
+
+  <header class="dashboard-header">
+    <div class="logo">🧠 Hope AI</div>
+    <nav class="top-nav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="plugins.html">Plugins</a>
+      <div class="profile-menu">
+        <img src="assets/img/avatar.png" alt="User Avatar" id="profile-icon" />
+        <div id="profile-dropdown" class="hidden">
+          <a href="profile.html">Profile</a>
+          <a href="settings.html">Settings</a>
+          <a href="login.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="billing-container">
+    <h2>💳 Billing & Subscriptions</h2>
+
+    <section class="current-plan">
+      <h3>Your Current Plan: <span id="plan-name">Free</span></h3>
+      <p>You are on the free plan. Upgrade for more power and features.</p>
+    </section>
+
+    <section class="plans">
+      <div class="plan-card">
+        <h4>Free</h4>
+        <p>Basic usage<br/>Limited plugin support</p>
+        <button disabled class="btn current">Current</button>
+      </div>
+
+      <div class="plan-card">
+        <h4>Pro - $9/month</h4>
+        <p>Advanced plugin support<br/>Higher request limits</p>
+        <button class="btn upgrade-btn">Upgrade</button>
+      </div>
+
+      <div class="plan-card">
+        <h4>Premium - $19/month</h4>
+        <p>Full plugin access<br/>Unlimited projects<br/>Priority AI performance</p>
+        <button class="btn upgrade-btn">Upgrade</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/js/billing.js"></script>
+</body>
+</html>

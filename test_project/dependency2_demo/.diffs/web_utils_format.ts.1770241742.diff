@@ -1,0 +1,148 @@
+--- web/utils/format.ts (old)
++++ web/utils/format.ts (new)
+@@ -121,3 +121,145 @@
+   truncate,
+   formatBytes
+ };
++# BEGIN Implement titleCase(s: string) that capitalizes each word in format.ts
++/**
++ * Format utilities
++ *
++ * This module provides helper functions for formatting dates, numbers,
++ * strings, etc. It is intentionally lightweight and can be extended as
++ * needed throughout the project.
++ *
++ * @module utils/format
++ */
++
++/**
++ * Formats a `Date` object into a string using the provided format.
++ *
++ * @param date - The date to format. If omitted, the current date/time is used.
++ * @param options - Intl.DateTimeFormat options or a custom format string.
++ * @returns A formatted date string.
++ *
++ * @example
++ *   formatDate(new Date(), { year: 'numeric', month: '2-digit', day: '2-digit' });
++ *   // => "2024-03-15"
++ */
++export function formatDate(
++  date: Date = new Date(),
++  options: Intl.DateTimeFormatOptions | string = {}
++): string {
++  if (typeof options === 'string') {
++    // Simple custom format handling (YYYY, MM, DD, hh, mm, ss)
++    const map: Record<string, string> = {
++      YYYY: date.getFullYear().toString(),
++      MM: String(date.getMonth() + 1).padStart(2, '0'),
++      DD: String(date.getDate()).padStart(2, '0'),
++      hh: String(date.getHours()).padStart(2, '0'),
++      mm: String(date.getMinutes()).padStart(2, '0'),
++      ss: String(date.getSeconds()).padStart(2, '0')
++    };
++    return options.replace(/YYYY|MM|DD|hh|mm|ss/g, (match) => map[match]);
++  }
++
++  return new Intl.DateTimeFormat(undefined, options).format(date);
++}
++
++/**
++ * Formats a number according to the given locale and options.
++ *
++ * @param value - The number to format.
++ * @param locale - BCP 47 language tag (defaults to the runtime locale).
++ * @param options - Intl.NumberFormat options.
++ * @returns A formatted number string.
++ *
++ * @example
++ *   formatNumber(12345.678, 'en-US', { style: 'currency', currency: 'USD' });
++ *   // => "$12,345.68"
++ */
++export function formatNumber(
++  value: number,
++  locale: string = undefined,
++  options: Intl.NumberFormatOptions = {}
++): string {
++  return new Intl.NumberFormat(locale, options).format(value);
++}
++
++/**
++ * Capitalizes the first character of a string.
++ *
++ * @param str - Input string.
++ * @returns The string with its first character capitalized.
++ *
++ * @example
++ *   capitalize('hello world'); // => "Hello world"
++ */
++export function capitalize(str: string): string {
++  if (!str) return '';
++  return str.charAt(0).toUpperCase() + str.slice(1);
++}
++
++/**
++ * Truncates a string to a maximum length, optionally adding an ellipsis.
++ *
++ * @param str - Input string.
++ * @param maxLength - Maximum allowed length (including ellipsis if added).
++ * @param ellipsis - Whether to append "…" when truncating (default: true).
++ * @returns The possibly truncated string.
++ *
++ * @example
++ *   truncate('Lorem ipsum dolor sit amet', 10); // => "Lorem i…"
++ */
++export function truncate(str: string, maxLength: number, ellipsis: boolean = true): string {
++  if (str.length <= maxLength) return str;
++  const suffix = ellipsis ? '…' : '';
++  const cutOff = maxLength - suffix.length;
++  return str.slice(0, cutOff) + suffix;
++}
++
++/**
++ * Formats a byte size into a human‑readable string (e.g., "1.5 MB").
++ *
++ * @param bytes - Number of bytes.
++ * @param decimals - Number of decimal places (default: 2).
++ * @returns Human‑readable size string.
++ *
++ * @example
++ *   formatBytes(1536); // => "1.50 KB"
++ */
++export function formatBytes(bytes: number, decimals = 2): string {
++  if (bytes === 0) return '0 Bytes';
++  const k = 1024;
++  const dm = Math.max(decimals, 0);
++  const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
++  const i = Math.floor(Math.log(bytes) / Math.log(k));
++  const size = parseFloat((bytes / Math.pow(k, i)).toFixed(dm));
++  return `${size} ${sizes[i]}`;
++}
++
++/**
++ * Converts a string to Title Case, capitalizing the first letter of each word.
++ *
++ * @param s - Input string.
++ * @returns The string with each word capitalized.
++ *
++ * @example
++ *   titleCase('hello world'); // => "Hello World"
++ */
++export function titleCase(s: string): string {
++  if (!s) return '';
++  return s
++    .split(' ')
++    .map(word => (word ? word[0].toUpperCase() + word.slice(1).toLowerCase() : ''))
++    .join(' ');
++}
++
++/* -------------------------------------------------------------------------- */
++/* Export a default object for convenient import as a namespace (optional)   */
++/* -------------------------------------------------------------------------- */
++export default {
++  formatDate,
++  formatNumber,
++  capitalize,
++  truncate,
++  formatBytes
++};
++# END Implement titleCase(s: string) that capitalizes each word in format.ts

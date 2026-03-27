@@ -1,0 +1,11 @@
+import { titleCase } from "./utils/format";
+
+export function formatMessage(msg: string): string {
+  return titleCase(msg);
+}
+
+export const app = {
+  // Add your application initialization code here.
+};
+
+export default app;

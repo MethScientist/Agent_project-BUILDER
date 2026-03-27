@@ -1,0 +1,88 @@
+2026-01-31 17:24:29,557 [INFO] [BOOT] AI Agent Booting...
+2026-01-31 17:24:29,558 [INFO] [ERROR] Invalid project root path: C:\Users\Hp\3D Objects\test
+2026-01-31 17:24:29,558 [INFO] [DONE] Task finished.
+2026-01-31 18:49:11,809 [INFO] [BOOT] AI Agent Booting...
+2026-01-31 18:49:11,810 [INFO] [ERROR] Invalid project root path: C:\Users\Hp\3D Objects\test
+2026-01-31 18:49:11,810 [INFO] [DONE] Task finished.
+2026-01-31 18:50:58,500 [INFO] [BOOT] AI Agent Booting...
+2026-01-31 18:50:58,500 [INFO] [ERROR] Invalid project root path: C:\Users\Hp\3D Objects\test
+2026-01-31 18:50:58,500 [INFO] [DONE] Task finished.
+2026-01-31 18:58:42,229 [INFO] Agent task started
+2026-01-31 18:58:42,229 [INFO] [BOOT] AI Agent Booting...
+2026-01-31 18:58:42,230 [INFO] [ERROR] Invalid project root path: C:\Users\Hp\3D Objects\test
+2026-01-31 18:58:42,230 [INFO] [DONE] Task finished.
+2026-01-31 21:01:27,901 [INFO] Agent task started
+2026-01-31 21:01:27,902 [INFO] [BOOT] AI Agent Booting...
+2026-01-31 21:01:27,902 [INFO] [ERROR] Invalid project root path: C:\Users\Hp\3D Objects\test
+2026-01-31 21:01:27,902 [INFO] [DONE] Task finished.
+2026-02-03 20:20:48,472 [INFO] Agent task started
+2026-02-03 20:20:48,473 [INFO] [BOOT] AI Agent Booting...
+2026-02-03 20:24:41,246 [INFO] [DONE] Task finished.
+2026-02-03 21:36:19,461 [INFO] Agent task started
+2026-02-03 21:36:19,461 [INFO] [BOOT] AI Agent Booting...
+2026-02-03 21:39:56,874 [INFO] [DONE] Task finished.
+2026-02-03 22:16:50,411 [INFO] Agent task started
+2026-02-03 22:16:50,412 [INFO] [BOOT] AI Agent Booting...
+2026-02-03 22:26:53,007 [INFO] [DONE] Task finished.
+2026-02-04 01:34:32,625 [INFO] Agent task started
+2026-02-04 01:34:32,626 [INFO] [BOOT] AI Agent Booting...
+2026-02-04 01:35:50,451 [INFO] [DONE] Task finished.
+2026-02-05 14:38:15,549 [INFO] Agent task started
+2026-02-05 14:38:15,549 [INFO] [BOOT] AI Agent Booting...
+2026-02-05 14:38:15,554 [INFO] 📁 Project root set to: C:\Users\Hp\3D Objects\CODEX_agent
+2026-02-05 14:38:15,957 [INFO] ✅ Executor created with context manager.
+2026-02-05 14:39:22,806 [INFO] ✅ All steps completed successfully!
+2026-02-05 14:39:22,807 [INFO] [DONE] Task finished.
+2026-02-05 14:55:37,860 [INFO] Agent task started
+2026-02-05 14:55:37,860 [INFO] [BOOT] AI Agent Booting...
+2026-02-05 14:55:37,860 [INFO] 📁 Project root set to: C:\Users\Hp\3D Objects\CODEX_agent
+2026-02-05 14:55:38,204 [INFO] ✅ Executor created with context manager.
+2026-02-05 14:57:52,280 [INFO] ✅ All steps completed successfully!
+2026-02-05 14:57:52,281 [INFO] [DONE] Task finished.
+2026-02-05 15:22:52,955 [INFO] Agent task started
+2026-02-05 15:22:52,956 [INFO] [BOOT] AI Agent Booting...
+2026-02-05 15:22:52,957 [INFO] 📁 Project root set to: C:\Users\Hp\3D Objects\CODEX_agent
+2026-02-05 15:22:53,304 [INFO] ✅ Executor created with context manager.
+2026-02-05 15:24:17,781 [INFO] ✅ All steps completed successfully!
+2026-02-05 15:24:17,789 [INFO] [DONE] Task finished.
+2026-02-07 00:06:38,950 [INFO] Agent task started
+2026-02-07 00:06:38,950 [INFO] [BOOT] AI Agent Booting...
+2026-02-07 00:06:38,951 [INFO] 📁 Project root set to: C:\Users\Hp\Music\stickmanAI
+2026-02-07 00:06:39,315 [INFO] ✅ Executor created with context manager.
+2026-02-07 00:09:52,890 [INFO] ✅ All steps completed successfully!
+2026-02-07 00:09:52,890 [INFO] [DONE] Task finished.
+2026-02-07 00:39:17,841 [INFO] Agent task started
+2026-02-07 00:39:17,842 [INFO] [BOOT] AI Agent Booting...
+2026-02-07 00:39:17,843 [INFO] 📁 Project root set to: C:\Users\Hp\Music\STCKMANII
+2026-02-07 00:39:18,201 [INFO] ✅ Executor created with context manager.
+2026-02-07 00:39:24,958 [INFO] [DONE] Task finished.
+2026-02-07 00:39:56,378 [INFO] Agent task started
+2026-02-07 00:39:56,379 [INFO] [BOOT] AI Agent Booting...
+2026-02-07 00:39:56,380 [INFO] 📁 Project root set to: C:\Users\Hp\Music\stickmanAI
+2026-02-07 00:40:00,722 [INFO] ✅ Executor created with context manager.
+2026-02-07 00:44:39,282 [INFO] ✅ All steps completed successfully!
+2026-02-07 00:44:39,282 [INFO] [DONE] Task finished.
+2026-02-07 02:16:55,931 [INFO] Agent task started
+2026-02-07 02:16:55,932 [INFO] [BOOT] AI Agent Booting...
+2026-02-07 02:16:55,933 [INFO] 📁 Project root set to: C:\Users\Hp\Music\stickmanAI
+2026-02-07 02:17:01,533 [INFO] ✅ Executor created with context manager.
+2026-02-07 02:18:16,878 [INFO] ❌ Agent execution failed: 'Planner' object has no attribute 'auto_fix_with_context'
+2026-02-07 02:18:16,878 [INFO] [DONE] Task finished.
+2026-02-07 02:19:26,422 [INFO] Agent task started
+2026-02-07 02:19:26,423 [INFO] [BOOT] AI Agent Booting...
+2026-02-07 02:19:26,424 [INFO] 📁 Project root set to: C:\Users\Hp\Music\stickmanAI
+2026-02-07 02:19:31,001 [INFO] ✅ Executor created with context manager.
+2026-02-07 02:20:54,410 [INFO] ❌ Agent execution failed: 'Planner' object has no attribute 'auto_fix_with_context'
+2026-02-07 02:20:54,410 [INFO] [DONE] Task finished.
+2026-02-07 02:33:26,193 [INFO] Agent task started
+2026-02-07 02:33:26,194 [INFO] [BOOT] AI Agent Booting...
+2026-02-07 02:33:26,195 [INFO] 📁 Project root set to: C:\Users\Hp\Music\stickmanAI
+2026-02-07 02:33:31,149 [INFO] ✅ Executor created with context manager.
+2026-02-07 02:34:57,794 [INFO] ❌ Agent execution failed: 'Planner' object has no attribute 'auto_fix_with_context'
+2026-02-07 02:34:57,795 [INFO] [DONE] Task finished.
+2026-02-07 02:38:17,793 [INFO] Agent task started
+2026-02-07 02:38:17,794 [INFO] [BOOT] AI Agent Booting...
+2026-02-07 02:38:17,794 [INFO] 📁 Project root set to: C:\Users\Hp\Music\stickmanAI
+2026-02-07 02:38:22,586 [INFO] ✅ Executor created with context manager.
+2026-02-07 02:45:15,741 [INFO] ✅ All steps completed successfully!
+2026-02-07 02:45:15,742 [INFO] [DONE] Task finished.

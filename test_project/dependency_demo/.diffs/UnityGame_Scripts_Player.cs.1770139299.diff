@@ -1,0 +1,17 @@
+--- UnityGame/Scripts/Player.cs (old)
++++ UnityGame/Scripts/Player.cs (new)
+@@ -0,0 +1,14 @@
++using Game.Core;
++
++namespace Game
++{
++    public class Player
++    {
++        private Health health = new Health();
++
++        public void Hit(int dmg)
++        {
++            health.TakeDamage(dmg);
++        }
++    }
++}

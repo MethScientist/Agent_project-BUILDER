@@ -1,0 +1,113 @@
+// UnityGame/Scripts/Health.cs
+// Placeholder Health component
+
+
+namespace UnityGame
+{
+    /// <summary>
+    /// Simple health component for any GameObject.
+    /// </summary>
+    [RequireComponent(typeof(Collider))]
+    public class Health : MonoBehaviour
+    {
+        [Header("Health Settings")]
+        [Tooltip("Maximum health value.")]
+        [SerializeField] private int maxHealth = 100;
+
+        [Tooltip("Current health value. Set to -1 to start at maxHealth.")]
+        [SerializeField] private int currentHealth = -1;
+
+        [Header("Events")]
+        public System.Action<int> OnHealthChanged;
+        public System.Action OnDeath;
+
+        private void Awake()
+        {
+            if (currentHealth < 0 || currentHealth > maxHealth)
+                currentHealth = maxHealth;
+        }
+
+        /// <summary>
+        /// Gets the current health.
+        /// </summary>
+        public int CurrentHealth => currentHealth;
+
+        /// <summary>
+        /// Gets the maximum health.
+        /// </summary>
+        public int MaxHealth => maxHealth;
+
+        /// <summary>
+        /// Apply damage to this object.
+        /// </summary>
+        /// <param name="amount">Amount of damage.</param>
+        public void TakeDamage(int amount)
+        {
+            if (amount <= 0 || currentHealth <= 0) return;
+
+            currentHealth = Mathf.Max(currentHealth - amount, 0);
+            OnHealthChanged?.Invoke(currentHealth);
+
+            if (currentHealth == 0)
+                Die();
+        }
+
+        /// <summary>
+        /// Heal this object.
+        /// </summary>
+        /// <param name="amount">Amount of healing.</param>
+        public void Heal(int amount)
+        {
+            if (amount <= 0 || currentHealth <= 0) return;
+
+            currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
+            OnHealthChanged?.Invoke(currentHealth);
+        }
+
+        /// <summary>
+        /// Instantly set health to max.
+        /// </summary>
+        public void RestoreFullHealth()
+        {
+            currentHealth = maxHealth;
+            OnHealthChanged?.Invoke(currentHealth);
+        }
+
+        private void Die()
+        {
+            OnDeath?.Invoke();
+            // Placeholder: disable the GameObject.
+            gameObject.SetActive(false);
+        }
+
+        #if UNITY_EDITOR
+        private void OnValidate()
+        {
+            maxHealth = Mathf.Max(1, maxHealth);
+            if (currentHealth > maxHealth) currentHealth = maxHealth;
+        }
+        #endif
+    }
+}
+# BEGIN Implement namespace Game.Core with class Health (int Current property, TakeDamage(int amount) reduces Current) in Health
+using System;
+
+namespace Game.Core
+{
+    public class Health
+    {
+        public int Current { get; private set; }
+
+        public Health(int initial = 100)
+        {
+            Current = initial;
+        }
+
+        public void TakeDamage(int amount)
+        {
+            if (amount <= 0) return;
+            Current = Math.Max(Current - amount, 0);
+        }
+    }
+}
+# END Implement namespace Game.Core with class Health (int Current property, TakeDamage(int amount) reduces Current) in Health

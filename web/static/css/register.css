@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: #0e3d33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    width: 850px;
+    background-color: #002e26;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .left-panel {
+    background: #001e1a;
+    color: white;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .left-panel img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .left-panel h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .right-panel {
+    background: #07362d;
+    color: white;
+    padding: 50px 40px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .right-panel h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .error-message {
+    color: #ff6f5c;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    background-color: #092923;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 12px 15px;
+  }
+  
+  .input-group i {
+    margin-right: 10px;
+    color: #ccc;
+  }
+  
+  .input-group input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .input-group.file input {
+    padding-left: 2px;
+  }
+  
+  .btn {
+    background-color: #1f644f;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #2e826b;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .login-link a {
+    color: #4ddf8f;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  

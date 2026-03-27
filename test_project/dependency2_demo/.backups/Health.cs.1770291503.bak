@@ -1,0 +1,16 @@
+using System;
+using UnityGame;
+
+namespace Game.Core
+{
+    public class Health
+    {
+        public int Current = 100;
+
+        public void TakeDamage(int amount)
+        {
+            if (amount <= 0) return;
+            Current = Math.Max(Current - amount, 0);
+        }
+    }
+}

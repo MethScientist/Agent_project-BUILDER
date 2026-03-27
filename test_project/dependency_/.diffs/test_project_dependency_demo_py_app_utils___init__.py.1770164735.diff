@@ -1,0 +1,16 @@
+--- test_project/dependency_demo/py_app/utils/__init__.py (old)
++++ test_project/dependency_demo/py_app/utils/__init__.py (new)
+@@ -1,12 +1 @@
+-"""Utility subpackage for py_app.
+-
+-Provides common helper classes and functions.
+-"""
+-
+-from .math_utils import Greeter, add, greet
+-
+-__all__ = [
+-    "Greeter",
+-    "add",
+-    "greet",
+-]
++# This file makes the utils package importable.

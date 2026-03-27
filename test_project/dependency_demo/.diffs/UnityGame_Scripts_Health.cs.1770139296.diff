@@ -1,0 +1,22 @@
+--- UnityGame/Scripts/Health.cs (old)
++++ UnityGame/Scripts/Health.cs (new)
+@@ -0,0 +1,19 @@
++namespace Game.Core
++{
++    public class Health
++    {
++        public int Current { get; private set; }
++
++        public Health(int initial = 100)
++        {
++            Current = initial;
++        }
++
++        public void TakeDamage(int amount)
++        {
++            Current -= amount;
++            if (Current < 0)
++                Current = 0;
++        }
++    }
++}

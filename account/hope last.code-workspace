@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "hope last",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}

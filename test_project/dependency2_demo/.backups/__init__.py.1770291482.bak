@@ -1,0 +1,9 @@
+"""
+Utility package initialization.
+
+This file ensures that the `py_app.utils` package can be imported
+without any side effects or syntax errors.
+"""
+
+# No symbols are exported by default.
+__all__: list[str] = []

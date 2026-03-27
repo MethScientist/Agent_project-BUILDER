@@ -1,0 +1,4 @@
+--- test_project/dependency_demo/py_app/__init__.py (old)
++++ test_project/dependency_demo/py_app/__init__.py (new)
+@@ -0,0 +1 @@
++# Package initializer for py_app

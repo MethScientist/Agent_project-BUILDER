@@ -1,0 +1,8 @@
+--- test_project/dependency_demo/py_app/__init__.py (old)
++++ test_project/dependency_demo/py_app/__init__.py (new)
+@@ -0,0 +1,5 @@
++"""
++py_app package initialization.
++"""
++
++# You can expose package-level symbols here if needed.

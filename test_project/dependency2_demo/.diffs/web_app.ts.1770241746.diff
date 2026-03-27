@@ -1,0 +1,27 @@
+--- web/app.ts (old)
++++ web/app.ts (new)
+@@ -11,3 +11,24 @@
+ };
+ 
+ export default app;
++# BEGIN Implement formatMessage(msg: string) that imports titleCase and returns titleCase(msg) in app.ts
++// web/app.ts
++
++/**
++ * Entry point for the web application.
++ * This file serves as a placeholder and can be expanded with
++ * actual application logic, routing, middleware, etc.
++ */
++
++import { titleCase } from "./utils/format";
++
++export function formatMessage(msg: string): string {
++  return titleCase(msg);
++}
++
++export const app = {
++  // Add your application initialization code here.
++};
++
++export default app;
++# END Implement formatMessage(msg: string) that imports titleCase and returns titleCase(msg) in app.ts

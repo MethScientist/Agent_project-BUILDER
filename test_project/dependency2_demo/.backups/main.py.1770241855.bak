@@ -1,0 +1,34 @@
+"""
+py_app/main.py
+
+Entry point placeholder for the py_app package.
+"""
+
+def main() -> None:
+    """
+    Main entry point for the application.
+
+    This function currently serves as a placeholder and does not perform any actions.
+    Extend it with the desired startup logic for your application.
+    """
+    # TODO: Implement application startup logic here
+    pass
+
+
+if __name__ == "__main__":
+    main()
+# BEGIN def main
+from py_app.utils.math_utils import add, Greeter
+
+
+def main() -> None:
+    """Run a simple demo using the utility functions."""
+    sum_result = add(2, 3)
+    greeting = Greeter("Hope").greet()
+    print(sum_result)
+    print(greeting)
+
+
+if __name__ == "__main__":
+    main()
+# END def main

@@ -1,0 +1,366 @@
+{
+  "project_files": {
+    "main.py": {
+      "name": "main.py",
+      "role": "code",
+      "dependencies": [
+        "utils.py",
+        "math_ops.py"
+      ],
+      "blocks": [
+        "print_hello",
+        "run_addition"
+      ],
+      "code_snippets": [
+        "print(hello_worl())",
+        "result = add_num(2, 3)"
+      ]
+    },
+    "utils.py": {
+      "name": "utils.py",
+      "role": "code",
+      "dependencies": [],
+      "blocks": [
+        "hello_world"
+      ],
+      "code_snippets": [
+        "def hello_world():",
+        "return 'Hello, World!'"
+      ]
+    },
+    "math_ops.py": {
+      "name": "math_ops.py",
+      "role": "code",
+      "dependencies": [],
+      "blocks": [
+        "add_num",
+        "sub_num"
+      ],
+      "code_snippets": [
+        "def add_num(a, b):",
+        "return a + b",
+        "def sub_num(a, b):",
+        "return a - b"
+      ]
+    },
+    ".env.example": {
+      "name": ".env.example",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "README.md": {
+      "name": "README.md",
+      "role": "code",
+      "dependencies": [],
+      "blocks": [
+        "def test"
+      ],
+      "code_snippets": []
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "pyproject.toml": {
+      "name": "pyproject.toml",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "stickman_app/__init__.py": {
+      "name": "stickman_app/__init__.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "stickman_app/config.py": {
+      "name": "stickman_app/config.py",
+      "role": "code",
+      "dependencies": [],
+      "blocks": [
+        "Add environment\u2011variable loading (python\u2011dotenv) and new configuration entries for Ollama endpoint, model name, YouTube "
+      ],
+      "code_snippets": []
+    },
+    "stickman_app/requirements.txt": {
+      "name": "stickman_app/requirements.txt",
+      "role": "code",
+      "dependencies": [],
+      "blocks": [
+        "Add any missing runtime dependencies to `requirements.txt`: `requests`, `websockets`, `playwright`, `pytube`, `python-do"
+      ],
+      "code_snippets": []
+    },
+    "tests/__init__.py": {
+      "name": "tests/__init__.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "tests/test_animation_controller.py": {
+      "name": "tests/test_animation_controller.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "env.example": {
+      "name": "env.example",
+      "role": "code",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "gitignore": {
+      "name": "gitignore",
+      "role": "code",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "stickman_app/stickman_renderer.py": {
+      "name": "stickman_app/stickman_renderer.py",
+      "role": "code",
+      "dependencies": [],
+      "blocks": [
+        "def __init__"
+      ],
+      "code_snippets": []
+    },
+    "stickman_app/env_interface.py": {
+      "name": "stickman_app/env_interface.py",
+      "role": "code",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "stickman_app/tts_service.py": {
+      "name": "stickman_app/tts_service.py",
+      "role": "code",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "stickman_app/animation_controller.py": {
+      "name": "stickman_app/animation_controller.py",
+      "role": "code",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "stickman_app/ai_controller.py": {
+      "name": "stickman_app/ai_controller.py",
+      "role": "code",
+      "dependencies": [],
+      "blocks": [
+        "def _build_system_prompt"
+      ],
+      "code_snippets": []
+    },
+    "stickman_app/main_stickman.py": {
+      "name": "stickman_app/main_stickman.py",
+      "role": "code",
+      "dependencies": [],
+      "blocks": [
+        "def _ai_loop"
+      ],
+      "code_snippets": []
+    },
+    "stickman_app/brain/__init__.py": {
+      "name": "stickman_app/brain/__init__.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [
+        "Expose `cache`, `context_manager`, and any new helpers so they can be imported as `stickman_app.brain.*`."
+      ],
+      "code_snippets": []
+    },
+    "stickman_app/brain/brain_service.py": {
+      "name": "stickman_app/brain/brain_service.py",
+      "role": "create_function",
+      "dependencies": [],
+      "blocks": [
+        "def __init__"
+      ],
+      "code_snippets": []
+    },
+    "stickman_app/actions/__init__.py": {
+      "name": "stickman_app/actions/__init__.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "stickman_app/actions/action_executor.py": {
+      "name": "stickman_app/actions/action_executor.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [
+        "def __init__"
+      ],
+      "code_snippets": []
+    },
+    "stickman_app/web_research.py": {
+      "name": "stickman_app/web_research.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "stickman_app/ui.py": {
+      "name": "stickman_app/ui.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [
+        "def run_ui"
+      ],
+      "code_snippets": []
+    },
+    "stickman_app/streaming/__init__.py": {
+      "name": "stickman_app/streaming/__init__.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "stickman_app/streaming/obs_controller.py": {
+      "name": "stickman_app/streaming/obs_controller.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "tests/test_brain_service.py": {
+      "name": "tests/test_brain_service.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "tests/test_action_executor.py": {
+      "name": "tests/test_action_executor.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "tests/test_web_research.py": {
+      "name": "tests/test_web_research.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "scripts/install_playwright.sh": {
+      "name": "scripts/install_playwright.sh",
+      "role": "code",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "stickman_app/brain/cache.py": {
+      "name": "stickman_app/brain/cache.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "stickman_app/brain/context_manager.py": {
+      "name": "stickman_app/brain/context_manager.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "stickman_app/utils/rate_limiter.py": {
+      "name": "stickman_app/utils/rate_limiter.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "stickman_app/ai/safety.py": {
+      "name": "stickman_app/ai/safety.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "stickman_app/ai/contracts.py": {
+      "name": "stickman_app/ai/contracts.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "stickman_app/bridge/stickman_bridge.py": {
+      "name": "stickman_app/bridge/stickman_bridge.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "stickman_app/ai/ai_controller.py": {
+      "name": "stickman_app/ai/ai_controller.py",
+      "role": "code",
+      "dependencies": [],
+      "blocks": [
+        "def __init__"
+      ],
+      "code_snippets": []
+    },
+    "tests/test_cache.py": {
+      "name": "tests/test_cache.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "tests/test_context_manager.py": {
+      "name": "tests/test_context_manager.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "tests/test_rate_limiter.py": {
+      "name": "tests/test_rate_limiter.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "tests/test_ai_controller.py": {
+      "name": "tests/test_ai_controller.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "tests/test_stickman_bridge.py": {
+      "name": "tests/test_stickman_bridge.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    },
+    "tests/test_safety.py": {
+      "name": "tests/test_safety.py",
+      "role": "create_file",
+      "dependencies": [],
+      "blocks": [],
+      "code_snippets": []
+    }
+  },
+  "active_file": null,
+  "current_goal": "",
+  "history": []
+}

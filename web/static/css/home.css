@@ -1,0 +1,175 @@
+/* assets/css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 1em;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.75em 1.5em;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #eee;
+    margin-top: 2em;
+}
+
+/* === Dashboard Layout === */
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.profile-menu {
+    position: relative;
+}
+
+#profile-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#profile-dropdown {
+    position: absolute;
+    top: 42px;
+    right: 0;
+    background-color: #222;
+    border: 1px solid #444;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-dropdown a {
+    color: #eee;
+    text-decoration: none;
+    padding: 0.3em 1em;
+}
+
+#profile-dropdown.hidden {
+    display: none;
+}
+
+.dashboard {
+    display: flex;
+    height: calc(100vh - 90px);
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #1c1c1c;
+    padding: 1em;
+    border-right: 1px solid #333;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    padding: 0.5em 0;
+    color: #ccc;
+}
+
+.main-panel {
+    flex: 1;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.prompt-box {
+    margin-bottom: 1em;
+}
+
+#prompt-form {
+    display: flex;
+    gap: 1em;
+}
+
+#user-prompt {
+    flex: 1;
+    padding: 0.75em;
+    background-color: #222;
+    border: 1px solid #444;
+    color: #eee;
+    border-radius: 4px;
+}
+
+.log-output {
+    flex: 1;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    padding: 1em;
+    overflow-y: auto;
+    margin-top: 1em;
+    font-family: monospace;
+    font-size: 0.9em;
+    color: #7fff7f;
+}
+
+.controls {
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+}
+
+.btn.small {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+}
+
+.status-bar {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 0.5em;
+    color: #888;
+}

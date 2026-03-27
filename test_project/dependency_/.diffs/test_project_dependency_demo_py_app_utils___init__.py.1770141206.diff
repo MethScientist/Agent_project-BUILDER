@@ -1,0 +1,6 @@
+--- test_project/dependency_demo/py_app/utils/__init__.py (old)
++++ test_project/dependency_demo/py_app/utils/__init__.py (new)
+@@ -0,0 +1,3 @@
++# utils package
++
++pass

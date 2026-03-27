@@ -1,0 +1,16 @@
+--- test_project/dependency_demo/py_app/main.py (old)
++++ test_project/dependency_demo/py_app/main.py (new)
+@@ -0,0 +1,13 @@
++from py_app.utils.math_utils import add, Greeter
++
++
++def main() -> None:
++    """Entry point that demonstrates utility functions."""
++    total = add(2, 3)
++    greeting = Greeter("Hope").greet()
++    print(total)
++    print(greeting)
++
++
++if __name__ == "__main__":
++    main()

@@ -1,0 +1,14 @@
+--- test_project/dependency_demo/py_app/__init__.py (old)
++++ test_project/dependency_demo/py_app/__init__.py (new)
+@@ -0,0 +1,11 @@
++from .main import greeting, main, total
++from .utils.math_utils import Greeter, add, greet
++
++__all__ = [
++    "greeting",
++    "main",
++    "total",
++    "Greeter",
++    "add",
++    "greet",
++]

@@ -1,0 +1,38 @@
+--- py_app/utils/math_utils.py (old)
++++ py_app/utils/math_utils.py (new)
+@@ -28,3 +28,35 @@
+ 
+ 
+ __all__: list[str] = ["add", "Greeter"]
++# BEGIN def add
++"""Utility functions for the demo application."""
++
++from __future__ import annotations
++
++from typing import Any, Union
++
++Number = Union[int, float, complex, Any]
++
++
++def add(a: Number, b: Number) -> Number:
++    """Return the sum of *a* and *b*.
++
++    This tiny helper mirrors the behaviour of the built‑in ``+`` operator but
++    provides a named entry point for the demo application.
++    """
++    return a + b
++
++
++class Greeter:
++    """Simple greeter that stores a name and produces a greeting."""
++
++    def __init__(self, name: str):
++        self.name = name
++
++    def greet(self) -> str:
++        """Return a friendly greeting for the stored name."""
++        return f"Hello, {self.name}"
++
++
++__all__: list[str] = ["add", "Greeter"]
++# END def add

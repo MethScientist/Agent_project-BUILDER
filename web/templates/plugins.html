@@ -1,0 +1,62 @@
+<!-- plugins.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plugins - Hope AI</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+<link rel="stylesheet" href="..\static\css\home.css">
+<link rel="stylesheet" href="..\static\css\register.css">
+<link rel="stylesheet" href="..\static\css\style.css">
+</head>
+<body class="dark">
+
+  <header class="dashboard-header">
+    <div class="logo">🧠 Hope AI</div>
+    <nav class="top-nav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="billing.html">Billing</a>
+      <div class="profile-menu">
+        <img src="assets/img/avatar.png" alt="User Avatar" id="profile-icon" />
+        <div id="profile-dropdown" class="hidden">
+          <a href="profile.html">Profile</a>
+          <a href="settings.html">Settings</a>
+          <a href="login.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="plugin-container">
+    <h2>🧩 Available Plugins</h2>
+
+    <div class="plugin-list">
+
+      <!-- Plugin Card Example -->
+      <div class="plugin-card">
+        <h3>Unity Game Agent</h3>
+        <p>Generate full Unity 3D game projects from a single prompt.</p>
+        <div class="plugin-actions">
+          <button class="btn activate-btn">Activate Plugin</button>
+          <a href="plugin_pages/plugin_unity.html" class="btn agent-btn">Use as Agent</a>
+        </div>
+      </div>
+
+      <div class="plugin-card">
+        <h3>Web Developer Agent</h3>
+        <p>Build full web apps with HTML, CSS, JS, or React based on prompts.</p>
+        <div class="plugin-actions">
+          <button class="btn activate-btn">Activate Plugin</button>
+          <a href="plugin_pages/plugin_webdev.html" class="btn agent-btn">Use as Agent</a>
+        </div>
+      </div>
+
+      <!-- Add more plugin cards here -->
+
+    </div>
+  </main>
+
+  <script src="/static/js/plugins.js"></script>
+</body>
+</html>

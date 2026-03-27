@@ -1,0 +1,14 @@
+--- py_app/utils/__init__.py (old)
++++ py_app/utils/__init__.py (new)
+@@ -1,9 +1,2 @@
+-"""
+-Utility package initialization.
+-
+-This file ensures that the `py_app.utils` package can be imported
+-without any side effects or syntax errors.
+-"""
+-
+-# No symbols are exported by default.
+-__all__: list[str] = []
++# test_project/dependency_demo/py_app/utils/__init__.py
++# This file intentionally left blank to mark the directory as a Python package.

@@ -1,0 +1,17 @@
+--- test_project/dependency_demo/py_app/utils/__init__.py (old)
++++ test_project/dependency_demo/py_app/utils/__init__.py (new)
+@@ -1,3 +1,12 @@
+-# utils package
++"""
++Utility sub‑package for the py_app module.
+ 
+-pass
++This file marks the directory as a Python package and can be used to expose
++convenient imports for the utilities contained within this package.
++
++Example:
++    from py_app.utils import some_utility_function
++"""
++
++# Export commonly used utilities at the package level (optional)
++# from .some_module import some_utility_function  # noqa: F401

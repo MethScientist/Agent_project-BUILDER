@@ -1,0 +1,411 @@
+/* assets/css/style.css */
+
+body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav a {
+    color: #ccc;
+    margin-left: 1em;
+    text-decoration: none;
+}
+
+nav .btn {
+    background: #007bff;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+.hero {
+    text-align: center;
+    padding: 4em 2em;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.btn.primary {
+    background-color: #00bcd4;
+    color: white;
+    padding: 0.75em 1.5em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #1f1f1f;
+    color: #aaa;
+    margin-top: 4em;
+}
+
+/* === Plugin Marketplace === */
+.plugin-container {
+    padding: 2em;
+    color: #fff;
+}
+
+.plugin-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 1em;
+}
+
+.plugin-card {
+    background-color: #222;
+    padding: 1.5em;
+    border: 1px solid #444;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.plugin-card h3 {
+    margin-top: 0;
+}
+
+.plugin-actions {
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.activate-btn {
+    background-color: #38b000;
+    color: white;
+    border: none;
+    padding: 0.6em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.agent-btn {
+    background-color: #0077ff;
+    color: white;
+    padding: 0.6em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* === Billing Page === */
+.billing-container {
+    padding: 2em;
+    color: #fff;
+}
+
+.current-plan {
+    margin-bottom: 2em;
+}
+
+.plans {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 1.5em;
+    width: 250px;
+    text-align: center;
+}
+
+.plan-card h4 {
+    margin-top: 0;
+    font-size: 1.4em;
+}
+
+.plan-card p {
+    margin: 1em 0;
+    font-size: 0.95em;
+}
+
+.btn {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.upgrade-btn {
+    background-color: #0077ff;
+}
+
+.current {
+    background-color: #666;
+    cursor: not-allowed;
+}
+
+/* === Profile Page === */
+.profile-container {
+    padding: 2em;
+    color: #fff;
+}
+
+.profile-card {
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 2em;
+    max-width: 400px;
+    margin-top: 2em;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1em auto;
+}
+
+.profile-form label {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.profile-form input {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background: #111;
+    color: white;
+}
+
+.profile-form .btn {
+    background-color: #0077ff;
+    width: 100%;
+    margin-top: 1em;
+}
+
+/* === Settings Page === */
+.settings-container {
+    padding: 2em;
+    color: #fff;
+    max-width: 600px;
+    margin: auto;
+}
+
+.settings-form {
+    background-color: #222;
+    padding: 2em;
+    border-radius: 10px;
+    border: 1px solid #444;
+}
+
+.setting-item {
+    margin-bottom: 1.5em;
+}
+
+.setting-item label {
+    font-size: 1rem;
+}
+
+.setting-item input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+.setting-item select {
+    background: #111;
+    color: white;
+    padding: 0.5em;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+/* === History Page === */
+.history-container {
+    padding: 2em;
+    max-width: 900px;
+    margin: auto;
+    color: #fff;
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.history-item {
+    background: #1a1a1a;
+    padding: 1.2em;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.history-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5em;
+}
+
+.history-item small {
+    color: #888;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.history-item button {
+    margin-right: 1em;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 0.5em 0.8em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* === Project Viewer === */
+.project-viewer {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2em;
+    color: #fff;
+}
+
+.project-viewer section {
+    margin-bottom: 2em;
+    background: #111;
+    padding: 1em;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.project-viewer pre {
+    background: #000;
+    padding: 1em;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 0.95rem;
+}
+
+#file-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.file-card {
+    background: #1a1a1a;
+    padding: 1em;
+    border-radius: 6px;
+    border: 1px solid #333;
+}
+
+.file-card h4 {
+    margin-bottom: 0.5em;
+}
+
+.viewer-actions {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.viewer-actions button {
+    margin: 0 0.5em;
+    padding: 0.6em 1em;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+/* === AI Agent Page === */
+.ai-agent-page {
+    max-width: 900px;
+    margin: auto;
+    padding: 2em;
+    color: #fff;
+}
+
+.chat-box {
+    border: 1px solid #333;
+    border-radius: 8px;
+    background: #111;
+    padding: 1em;
+    height: 500px;
+    overflow-y: auto;
+    margin-bottom: 1em;
+}
+
+.message {
+    padding: 0.7em 1em;
+    border-radius: 6px;
+    margin-bottom: 1em;
+    max-width: 80%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.message.user {
+    background: #1a1a1a;
+    text-align: right;
+    margin-left: auto;
+}
+
+.message.ai {
+    background: #222;
+    border-left: 3px solid #48f;
+}
+
+.input-area {
+    display: flex;
+    gap: 1em;
+}
+
+.input-area textarea {
+    flex: 1;
+    padding: 1em;
+    border-radius: 6px;
+    background: #000;
+    border: 1px solid #444;
+    color: #fff;
+    font-family: monospace;
+    resize: none;
+}
+
+.input-area button {
+    padding: 0.7em 1.2em;
+    background: #48f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}

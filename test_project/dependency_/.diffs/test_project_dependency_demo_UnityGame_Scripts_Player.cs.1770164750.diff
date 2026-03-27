@@ -1,0 +1,18 @@
+--- test_project/dependency_demo/UnityGame/Scripts/Player.cs (old)
++++ test_project/dependency_demo/UnityGame/Scripts/Player.cs (new)
+@@ -0,0 +1,15 @@
++using Game.Core;
++using Game;
++
++namespace Game
++{
++    public class Player
++    {
++        private Health health = new Health();
++
++        public void Hit(int dmg)
++        {
++            health.TakeDamage(dmg);
++        }
++    }
++}

@@ -1,0 +1,461 @@
+--- py_app/utils/math_utils.py (old)
++++ py_app/utils/math_utils.py (new)
+@@ -425,3 +425,458 @@
+     "dot_product",
+     "cross_product",
+ ]
++# BEGIN def is_prime
++"""
++py_app.utils.math_utils
++~~~~~~~~~~~~~~~~~~~~~~~
++
++Utility functions for common mathematical operations.
++
++This module is intentionally lightweight and serves as a placeholder for
++future extensions. It provides a small set of pure‑Python helpers that are
++useful across the project without pulling in heavy third‑party dependencies.
++
++Typical usage
++-------------
++
++>>> from py_app.utils.math_utils import is_prime, gcd, lcm, factorial
++>>> is_prime(7)
++True
++>>> gcd(48, 180)
++12
++>>> lcm(4, 6)
++12
++>>> factorial(5)
++120
++"""
++
++from __future__ import annotations
++
++import math
++from functools import reduce
++from typing import Iterable, Tuple, Union
++
++Number = Union[int, float]
++
++
++def is_prime(n: int) -> bool:
++    """Return ``True`` if *n* is a prime number, ``False`` otherwise.
++
++    The implementation uses a simple trial‑division algorithm that is
++    sufficient for small to moderate values of *n* (up to a few million).
++
++    Parameters
++    ----------
++    n: int
++        The integer to test for primality. Negative numbers and 0/1 are not
++        considered prime.
++
++    Returns
++    -------
++    bool
++        ``True`` if *n* is a prime, ``False`` otherwise.
++    """
++    if n <= 1:
++        return False
++    if n <= 3:
++        return True
++    if n % 2 == 0 or n % 3 == 0:
++        return False
++
++    i = 5
++    w = 2
++    while i * i <= n:
++        if n % i == 0:
++            return False
++        i += w
++        w = 6 - w  # alternate between adding 2 and 4 (i.e., 5,7,11,13,…)
++    return True
++
++
++def gcd(a: int, b: int) -> int:
++    """Compute the greatest common divisor of *a* and *b* using Euclid's algorithm.
++
++    Parameters
++    ----------
++    a, b: int
++        Integers for which the GCD is required.
++
++    Returns
++    -------
++    int
++        The greatest common divisor of *a* and *b*.
++    """
++    return math.gcd(a, b)
++
++
++def lcm(a: int, b: int) -> int:
++    """Return the least common multiple of *a* and *b*.
++
++    The result is always non‑negative. If either argument is zero, the LCM is defined
++    as zero.
++
++    Parameters
++    ----------
++    a, b: int
++        Integers for which the LCM is required.
++
++    Returns
++    -------
++    int
++        The least common multiple of *a* and *b*.
++    """
++    if a == 0 or b == 0:
++        return 0
++    return abs(a // gcd(a, b) * b)
++
++
++def factorial(n: int) -> int:
++    """Return the factorial of *n* (i.e., ``n!``).
++
++    This implementation delegates to :func:`math.factorial` for speed and
++    correctness, but includes a small guard for negative inputs.
++
++    Parameters
++    ----------
++    n: int
++        Non‑negative integer.
++
++    Returns
++    -------
++    int
++        ``n!``
++
++    Raises
++    ------
++    ValueError
++        If *n* is negative.
++    """
++    if n < 0:
++        raise ValueError("factorial() not defined for negative values")
++    return math.factorial(n)
++
++
++def is_power_of_two(n: int) -> bool:
++    """Return ``True`` if *n* is a power of two, ``False`` otherwise.
++
++    Zero and negative numbers are not considered powers of two.
++
++    Parameters
++    ----------
++    n: int
++        Integer to test.
++
++    Returns
++    -------
++    bool
++    """
++    return n > 0 and (n & (n - 1)) == 0
++
++
++def prime_factors(n: int) -> Tuple[int, ...]:
++    """Return the prime factorisation of *n* as a tuple of prime factors.
++
++    The factors are returned in non‑decreasing order. For ``n <= 1`` an empty
++    tuple is returned.
++
++    Parameters
++    ----------
++    n: int
++        Integer to factorise (must be non‑negative).
++
++    Returns
++    -------
++    tuple[int, ...]
++        Prime factors of *n*.
++    """
++    if n <= 1:
++        return ()
++    factors = []
++    # Extract the factor 2
++    while n % 2 == 0:
++        factors.append(2)
++        n //= 2
++    # Extract odd factors
++    p = 3
++    max_p = math.isqrt(n) + 1
++    while p <= max_p and n > 1:
++        while n % p == 0:
++            factors.append(p)
++            n //= p
++            max_p = math.isqrt(n) + 1
++        p += 2
++    if n > 1:
++        factors.append(n)
++    return tuple(factors)
++
++
++def nth_fibonacci(n: int) -> int:
++    """Return the *n*‑th Fibonacci number (0‑indexed).
++
++    Uses an iterative approach with O(1) space.
++
++    Parameters
++    ----------
++    n: int
++        Index of the Fibonacci number (must be non‑negative).
++
++    Returns
++    -------
++    int
++        The *n*‑th Fibonacci number.
++    """
++    if n < 0:
++        raise ValueError("Fibonacci index must be non‑negative")
++    a, b = 0, 1
++    for _ in range(n):
++        a, b = b, a + b
++    return a
++
++
++def mean(values: Iterable[Number]) -> float:
++    """Calculate the arithmetic mean of *values*.
++
++    Parameters
++    ----------
++    values: Iterable[Number]
++        A non‑empty iterable of numeric values.
++
++    Returns
++    -------
++    float
++        The arithmetic mean.
++
++    Raises
++    ------
++    ValueError
++        If *values* is empty.
++    """
++    values = list(values)
++    if not values:
++        raise ValueError("mean() requires at least one data point")
++    return sum(values) / len(values)
++
++
++def median(values: Iterable[Number]) -> float:
++    """Return the median of *values*.
++
++    Parameters
++    ----------
++    values: Iterable[Number]
++        A non‑empty iterable of numeric values.
++
++    Returns
++    -------
++    float
++        The median value.
++
++    Raises
++    ------
++    ValueError
++        If *values* is empty.
++    """
++    sorted_vals = sorted(values)
++    n = len(sorted_vals)
++    if n == 0:
++        raise ValueError("median() requires at least one data point")
++    mid = n // 2
++    if n % 2 == 0:
++        return (sorted_vals[mid - 1] + sorted_vals[mid]) / 2.0
++    return float(sorted_vals[mid])
++
++
++def stddev(values: Iterable[Number], population: bool = False) -> float:
++    """Calculate the standard deviation of *values*.
++
++    Parameters
++    ----------
++    values: Iterable[Number]
++        Numeric data.
++    population: bool, optional
++        If ``True`` treat *values* as the entire population; otherwise use the
++        sample standard deviation (default).
++
++    Returns
++    -------
++    float
++        The standard deviation.
++
++    Raises
++    ------
++    ValueError
++        If *values* has fewer than two elements for a sample standard deviation.
++    """
++    vals = list(values)
++    n = len(vals)
++    if n == 0:
++        raise ValueError("stddev() requires at least one data point")
++    if not population and n < 2:
++        raise ValueError("sample standard deviation requires at least two data points")
++    mu = mean(vals)
++    variance = sum((x - mu) ** 2 for x in vals) / (n if population else n - 1)
++    return math.sqrt(variance)
++
++
++def clamp(value: Number, min_value: Number, max_value: Number) -> Number:
++    """Clamp *value* to the inclusive range ``[min_value, max_value]``.
++
++    Parameters
++    ----------
++    value: Number
++        The value to clamp.
++    min_value: Number
++        Lower bound.
++    max_value: Number
++        Upper bound.
++
++    Returns
++    -------
++    Number
++        ``min_value`` if ``value < min_value``, ``max_value`` if ``value > max_value``,
++        otherwise ``value``.
++    """
++    return max(min_value, min(value, max_value))
++
++
++def linear_interpolate(x0: Number, x1: Number, t: float) -> float:
++    """Return the linear interpolation between *x0* and *x1*.
++
++    ``t`` should be in the range ``[0, 1]`` where ``0`` yields *x0* and ``1`` yields *x1*.
++    Values outside this range will extrapolate linearly.
++
++    Parameters
++    ----------
++    x0, x1: Number
++        End points.
++    t: float
++        Interpolation factor.
++
++    Returns
++    -------
++    float
++        Interpolated value.
++    """
++    return (1 - t) * x0 + t * x1
++
++
++def euclidean_distance(p1: Tuple[Number, ...], p2: Tuple[Number, ...]) -> float:
++    """Compute the Euclidean distance between two points in N‑dimensional space.
++
++    Parameters
++    ----------
++    p1, p2: tuple[Number, ...]
++        Coordinate tuples of equal length.
++
++    Returns
++    -------
++    float
++        The Euclidean distance.
++
++    Raises
++    ------
++    ValueError
++        If the points have differing dimensions.
++    """
++    if len(p1) != len(p2):
++        raise ValueError("Points must have the same dimensionality")
++    return math.sqrt(sum((a - b) ** 2 for a, b in zip(p1, p2)))
++
++
++def dot_product(v1: Tuple[Number, ...], v2: Tuple[Number, ...]) -> Number:
++    """Return the dot product of two vectors of equal length.
++
++    Parameters
++    ----------
++    v1, v2: tuple[Number, ...]
++        Input vectors.
++
++    Returns
++    -------
++    Number
++        The dot product.
++
++    Raises
++    ------
++    ValueError
++        If the vectors have differing lengths.
++    """
++    if len(v1) != len(v2):
++        raise ValueError("Vectors must be of the same length")
++    return sum(a * b for a, b in zip(v1, v2))
++
++
++def cross_product(v1: Tuple[Number, Number, Number], v2: Tuple[Number, Number, Number]) -> Tuple[Number, Number, Number]:
++    """Return the 3‑D cross product of two vectors.
++
++    Parameters
++    ----------
++    v1, v2: tuple[Number, Number, Number]
++        3‑dimensional vectors.
++
++    Returns
++    -------
++    tuple[Number, Number, Number]
++        The cross product vector.
++
++    Raises
++    ------
++    ValueError
++        If either vector is not three‑dimensional.
++    """
++    if len(v1) != 3 or len(v2) != 3:
++        raise ValueError("Both vectors must be three-dimensional")
++    a1, a2, a3 = v1
++    b1, b2, b3 = v2
++    return (a2 * b3 - a3 * b2,
++            a3 * b1 - a1 * b3,
++            a1 * b2 - a2 * b1)
++
++
++# --------------------------------------------------------------------------- #
++# Project‑specific utilities
++# --------------------------------------------------------------------------- #
++
++def add(a: Number, b: Number) -> Number:
++    """Return the sum of *a* and *b*.
++
++    This tiny helper mirrors the behaviour of the built‑in ``+`` operator but
++    provides a named entry point for the demo application.
++    """
++    return a + b
++
++
++class Greeter:
++    """Simple greeter that stores a name and produces a greeting."""
++
++    def __init__(self, name: str):
++        self.name = name
++
++    def greet(self) -> str:
++        """Return a friendly greeting for the stored name."""
++        return f"Hello, {self.name}"
++
++
++# --------------------------------------------------------------------------- #
++# Exported symbols
++# --------------------------------------------------------------------------- #
++
++__all__ = [
++    "is_prime",
++    "gcd",
++    "lcm",
++    "factorial",
++    "is_power_of_two",
++    "prime_factors",
++    "nth_fibonacci",
++    "mean",
++    "median",
++    "stddev",
++    "clamp",
++    "linear_interpolate",
++    "euclidean_distance",
++    "dot_product",
++    "cross_product",
++    "add",
++    "Greeter",
++]
++# END def is_prime

@@ -1,0 +1,26 @@
+--- web/utils/format.ts (old)
++++ web/utils/format.ts (new)
+@@ -139,3 +139,23 @@
+   formatBytes,
+   titleCase
+ };
++# BEGIN Implement format.ts exporting titleCase(s:string) that capitalises each word
++/**
++ * Converts a string to Title Case, capitalizing the first letter of each word.
++ *
++ * @param s - Input string.
++ * @returns The string with each word capitalized.
++ *
++ * @example
++ *   titleCase('hello world'); // => "Hello World"
++ */
++export function titleCase(s: string): string {
++  if (!s) return '';
++  return s
++    .split(' ')
++    .map(word =>
++      word ? word[0].toUpperCase() + word.slice(1).toLowerCase() : ''
++    )
++    .join(' ');
++}
++# END Implement format.ts exporting titleCase(s:string) that capitalises each word

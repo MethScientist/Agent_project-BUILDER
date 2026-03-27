@@ -1,0 +1,17 @@
+--- test_project/dependency_demo/py_app/main.py (old)
++++ test_project/dependency_demo/py_app/main.py (new)
+@@ -0,0 +1,14 @@
++from .utils.math_utils import add, Greeter
++
++def total() -> int:
++    """Return the sum of 2 and 3."""
++    return add(2, 3)
++
++def greeting() -> str:
++    """Return a greeting for 'Hope'."""
++    return Greeter("Hope").greet()
++
++def main() -> None:
++    """Entry point that prints the computed sum and greeting."""
++    print(total())
++    print(greeting())

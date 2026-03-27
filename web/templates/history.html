@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>History - Hope AI</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+<link rel="stylesheet" href="..\..\lib\tom-select\tom-select.css">
+<link rel="stylesheet" href="..\static\css\home.css">
+<link rel="stylesheet" href="..\static\css\register.css">
+<link rel="stylesheet" href="..\static\css\style.css">
+</head>
+<body class="dark">
+
+  <header class="dashboard-header">
+    <div class="logo">🧠 Hope AI</div>
+    <nav class="top-nav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="plugins.html">Plugins</a>
+      <a href="billing.html">Billing</a>
+      <a href="history.html" class="active">History</a>
+      <div class="profile-menu">
+        <img src="assets/img/avatar.png" alt="User Avatar" id="profile-icon" />
+        <div id="profile-dropdown" class="hidden">
+          <a href="profile.html">Profile</a>
+          <a href="settings.html">Settings</a>
+          <a href="login.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="history-container">
+    <h2>📜 Prompt History</h2>
+    <div id="history-list" class="history-list">
+      <!-- JS will load prompt items here -->
+    </div>
+  </main>
+
+  <script src="/static/js/history.js"></script>
+</body>
+</html>

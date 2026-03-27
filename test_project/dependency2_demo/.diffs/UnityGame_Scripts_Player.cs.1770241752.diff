@@ -1,0 +1,22 @@
+--- UnityGame/Scripts/Player.cs (old)
++++ UnityGame/Scripts/Player.cs (new)
+@@ -94,3 +94,19 @@
+         public float GetMoveSpeed() => moveSpeed;
+     }
+ }
++# BEGIN Implement namespace Game with using Game.Core; class Player (Health health field, Hit(int dmg) calls health.TakeDamage(d
++using Game.Core;
++
++namespace Game
++{
++    public class Player
++    {
++        private Health health = new Health();
++
++        public void Hit(int dmg)
++        {
++            health.TakeDamage(dmg);
++        }
++    }
++}
++# END Implement namespace Game with using Game.Core; class Player (Health health field, Hit(int dmg) calls health.TakeDamage(d

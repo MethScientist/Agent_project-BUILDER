@@ -1,0 +1,22 @@
+--- test_project/dependency_demo/py_app/utils/math_utils.py (old)
++++ test_project/dependency_demo/py_app/utils/math_utils.py (new)
+@@ -0,0 +1,19 @@
++def add(a, b):
++    """Return the sum of a and b."""
++    return a + b
++
++
++class Greeter:
++    """Simple greeter that stores a name."""
++
++    def __init__(self, name: str):
++        self.name = name
++
++    def greet(self) -> str:
++        """Return a greeting for the stored name."""
++        return f"Hello, {self.name}"
++
++
++def greet(name: str) -> str:
++    """Convenience function that returns a greeting for the given name."""
++    return Greeter(name).greet()

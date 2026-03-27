@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings - Hope AI</title>
+  <link rel="stylesheet" href="/static/css/style.css"/>
+<link rel="stylesheet" href="..\..\lib\tom-select\tom-select.css">
+<link rel="stylesheet" href="..\static\css\home.css">
+<link rel="stylesheet" href="..\static\css\register.css">
+<link rel="stylesheet" href="..\static\css\style.css">
+</head>
+<body class="dark">
+
+  <header class="dashboard-header">
+    <div class="logo">🧠 Hope AI</div>
+    <nav class="top-nav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="plugins.html">Plugins</a>
+      <a href="billing.html">Billing</a>
+      <div class="profile-menu">
+        <img src="assets/img/avatar.png" alt="User Avatar" id="profile-icon" />
+        <div id="profile-dropdown" class="hidden">
+          <a href="profile.html">Profile</a>
+          <a href="settings.html">Settings</a>
+          <a href="login.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="settings-container">
+    <h2>⚙️ AI Agent Settings</h2>
+
+    <form class="settings-form">
+      <div class="setting-item">
+        <label>
+          <input type="checkbox" id="liveTrackingToggle" checked />
+          Enable Live Tracking
+        </label>
+      </div>
+
+      <div class="setting-item">
+        <label>
+          <input type="checkbox" id="autoGenToggle" />
+          Auto Generate Files on Prompt
+        </label>
+      </div>
+
+      <div class="setting-item">
+        <label>
+          Default AI Agent Mode:
+          <select id="defaultAgent">
+            <option value="core">Core Planner</option>
+            <option value="unity">Unity Agent</option>
+            <option value="web">Web Dev Agent</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="setting-item">
+        <label>
+          Preferred Theme:
+          <select id="themeSelect">
+            <option value="dark">Dark</option>
+            <option value="light">Light</option>
+          </select>
+        </label>
+      </div>
+
+      <button type="submit" class="btn">Save Settings</button>
+    </form>
+  </main>
+
+  <script src="/static/js/settings.js"></script>
+</body>
+</html>

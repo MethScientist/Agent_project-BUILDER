@@ -1,0 +1,28 @@
+--- UnityGame/Scripts/Health.cs (old)
++++ UnityGame/Scripts/Health.cs (new)
+@@ -89,3 +89,25 @@
+         #endif
+     }
+ }
++# BEGIN Implement namespace Game.Core with class Health (int Current property, TakeDamage(int amount) reduces Current) in Health
++using System;
++
++namespace Game.Core
++{
++    public class Health
++    {
++        public int Current { get; private set; }
++
++        public Health(int initial = 100)
++        {
++            Current = initial;
++        }
++
++        public void TakeDamage(int amount)
++        {
++            if (amount <= 0) return;
++            Current = Math.Max(Current - amount, 0);
++        }
++    }
++}
++# END Implement namespace Game.Core with class Health (int Current property, TakeDamage(int amount) reduces Current) in Health

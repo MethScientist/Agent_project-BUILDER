@@ -1,0 +1,13 @@
+// web/app.ts
+
+/**
+ * Entry point for the web application.
+ * This file serves as a placeholder and can be expanded with
+ * actual application logic, routing, middleware, etc.
+ */
+
+export const app = {
+  // Add your application initialization code here.
+};
+
+export default app;

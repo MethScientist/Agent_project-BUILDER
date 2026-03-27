@@ -1,0 +1,8 @@
+--- test_project/dependency_demo/web/app.ts (old)
++++ test_project/dependency_demo/web/app.ts (new)
+@@ -0,0 +1,5 @@
++import { titleCase } from "./utils/format";
++
++export function formatMessage(msg: string): string {
++    return titleCase(msg);
++}

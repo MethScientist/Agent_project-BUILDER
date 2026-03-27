@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Code Diff Review</title>
+<style>
+  body {
+    font-family: monospace, monospace;
+    background: #1e1e1e;
+    color: #ddd;
+    margin: 0;
+    padding: 20px;
+  }
+  .diff-review-modal {
+    max-width: 900px;
+    margin: auto;
+    background: #252526;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 10px #000;
+  }
+  .diff-header {
+    margin-bottom: 10px;
+  }
+  .diff-header code {
+    background: #333;
+    padding: 3px 6px;
+    border-radius: 4px;
+  }
+  .diff-viewer {
+    background: #1e1e1e;
+    max-height: 500px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    border: 1px solid #444;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .diff-line {
+    display: block;
+  }
+  .diff-add {
+    background-color: #144620;
+    color: #a6e22e;
+  }
+  .diff-remove {
+    background-color: #4b1c1c;
+    color: #f92672;
+  }
+  .diff-neutral {
+    color: #ccc;
+  }
+  .diff-actions {
+    margin-top: 15px;
+    text-align: right;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .accept-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .reject-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  .btn:hover {
+    opacity: 0.9;
+  }
+</style>
+<link rel="stylesheet" href="..\static\css\home.css">
+<link rel="stylesheet" href="..\static\css\register.css">
+<link rel="stylesheet" href="..\static\css\style.css">
+<script src="..\static\js\api.js"></script>
+</head>
+<body>
+
+    <div class="diff-review-modal">
+        <header class="diff-header">
+            <h3>Review changes for: <code id="file-path">example.py</code></h3>
+        </header>
+
+        <section class="diff-viewer" id="diff-viewer">
+            <!-- Diff lines will be injected here -->
+        </section>
+
+        <footer class="diff-actions">
+            <button class="btn accept-btn" id="accept-btn">Accept</button>
+            <button class="btn reject-btn" id="reject-btn">Reject</button>
+        </footer>
+    </div>
+
+    <script>
+    // Example function to update the diff UI dynamically
+    function updateDiffUI(filePath, diffText) {
+      // Update file path display
+      document.getElementById("file-path").textContent = filePath;
+  
+      // Render diff lines with colors
+      const container = document.getElementById("diff-viewer");
+      container.innerHTML = "";
+  
+      const lines = diffText.split("\n");
+      lines.forEach(line => {
+        const div = document.createElement("div");
+        div.textContent = line;
+  
+        if (line.startsWith("+") && !line.startsWith("+++")) {
+          div.className = "diff-line diff-add";
+        } else if (line.startsWith("-") && !line.startsWith("---")) {
+          div.className = "diff-line diff-remove";
+        } else {
+          div.className = "diff-line diff-neutral";
+        }
+  
+        container.appendChild(div);
+      });
+    }
+  
+    // Example usage: simulate fetching data from backend
+    function fetchDiffFromBackend() {
+      // Simulate an async fetch (replace this with real fetch/ws)
+      return new Promise(resolve => {
+        setTimeout(() => {
+          resolve({
+            filePath: "backend/features/example.py",
+            diffText: `
+  --- before/backend/features/example.py
+  +++ after/backend/features/example.py
+  @@ -1,5 +1,6 @@
+  -def add(a, b):
+  -    return a + b
+  +def add(a, b):
+  +    print("Adding numbers")
+  +    return a + b
+  +
+  +def subtract(a, b):
+  +    return a - b
+  `
+          });
+        }, 500);
+      });
+    }
+  
+    // On page load, fetch diff and update UI
+    window.onload = async () => {
+      const data = await fetchDiffFromBackend();
+      updateDiffUI(data.filePath, data.diffText);
+    };
+  
+    // Button handlers
+    document.getElementById("accept-btn").addEventListener("click", () => {
+      alert("Accepted changes!");
+      // TODO: send accept action to backend
+    });
+  
+    document.getElementById("reject-btn").addEventListener("click", () => {
+      alert("Rejected changes!");
+      // TODO: send reject action to backend
+    });
+    async function sendDecision(action) {
+        const filePath = document.getElementById("file-path").textContent;
+        
+        try {
+            const response = await fetch('http://127.0.0.1:8000/api/diff/decision', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action, file: filePath })
+            });
+
+            if (response.ok) {
+                alert(`${action.charAt(0).toUpperCase() + action.slice(1)}ed changes successfully!`);
+            } else {
+                alert(`Failed to ${action} changes: ${response.statusText}`);
+            }
+            } catch (err) {
+                alert(`Error: ${err.message}`);
+            }
+        }
+
+        document.getElementById("accept-btn").addEventListener("click", () => sendDecision("accept"));
+        document.getElementById("reject-btn").addEventListener("click", () => sendDecision("reject"));
+  </script>
+  
+
+</body>
+</html>

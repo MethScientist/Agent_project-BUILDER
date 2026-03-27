@@ -1,0 +1,24 @@
+import { titleCase } from "./utils/format";
+
+export function formatMessage(msg: string): string {
+  return titleCase(msg);
+}
+
+export const app = {
+  // Add your application initialization code here.
+};
+
+export default app;
+# BEGIN Implement app.ts that imports titleCase and exports formatMessage(msg:string) using it
+import { titleCase } from "./utils/format";
+
+export function formatMessage(msg: string): string {
+  return titleCase(msg);
+}
+
+export const app = {
+  // Add your application initialization code here.
+};
+
+export default app;
+# END Implement app.ts that imports titleCase and exports formatMessage(msg:string) using it

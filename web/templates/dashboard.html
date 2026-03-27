@@ -1,0 +1,83 @@
+<!-- CORRECTED dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hope AI Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='css/home.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+<link rel="stylesheet" href="..\static\css\home.css">
+<link rel="stylesheet" href="..\static\css\register.css">
+<link rel="stylesheet" href="..\static\css\style.css">
+</head>
+<body class="dark">
+
+  <header class="dashboard-header">
+    <div class="logo">🧠 Hope AI</div>
+    <nav class="top-nav">
+      <a href="plugins.html">Plugins</a>
+      <a href="billing.html">Billing</a>
+      <div class="profile-menu">
+        <img src="{{ url_for('static', path='img/avatar.png') }}" alt="User Avatar" id="profile-icon" />
+        <div id="profile-dropdown" class="hidden">
+          <a href="profile.html">Profile</a>
+          <a href="settings.html">Settings</a>
+          <a href="login.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="dashboard">
+    <aside class="sidebar">
+      <h3>Project Files</h3>
+      <ul id="file-explorer">
+        <li>index.html</li>
+        <li>style.css</li>
+        <li>app.js</li>
+      </ul>
+    </aside>
+
+    <section class="main-panel">
+      <div class="prompt-box">
+        <form id="prompt-form">
+          <input
+            type="text"
+            id="project-root-input"
+            name="project_root"
+            placeholder="Paste project root path here"
+            required
+          />
+          
+          <textarea
+            id="user-prompt"
+            name="prompt"
+            placeholder="Enter your prompt here"
+            rows="4"
+            required
+          ></textarea>
+          
+          <button type="submit">Run</button>
+        </form>
+      </div>
+
+      <div id="live-log" style="background:#111; color:#eee; padding:1rem; height:400px; overflow-y:auto; font-family: monospace; white-space: pre-wrap;">
+        Connecting to live AI agent tracker...
+      </div>
+      
+      <div class="controls">
+        <button class="btn small">Stop</button>
+        <button class="btn small">Clear</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="status-bar">
+    <p>Status: Connected ✅</p>
+  </footer>
+
+  <script src="{{ url_for('static', path='js/dashboard.js') }}"></script>
+
+</body>
+</html>

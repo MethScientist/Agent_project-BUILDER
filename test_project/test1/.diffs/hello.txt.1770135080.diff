@@ -1,0 +1,5 @@
+--- hello.txt (old)
++++ hello.txt (new)
+@@ -1 +1,2 @@
+ Hello from Hope Agent
++

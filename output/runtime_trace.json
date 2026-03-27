@@ -1,0 +1,819 @@
+{
+  "steps": {
+    "<no-step>": {
+      "files": {
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\test_project/dependency_demo": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\test_project/dependency_demo"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\file_creator.py:41 in create_folder"
+          ]
+        },
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\test_project/dependency_demo/py_app": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\test_project/dependency_demo/py_app"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\file_creator.py:41 in create_folder"
+          ]
+        },
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\test_project/dependency_demo/py_app/utils": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\test_project/dependency_demo/py_app/utils"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\file_creator.py:41 in create_folder"
+          ]
+        },
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\test_project/dependency_demo/web": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\test_project/dependency_demo/web"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\file_creator.py:41 in create_folder"
+          ]
+        },
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\test_project/dependency_demo/web/utils": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\test_project/dependency_demo/web/utils"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\file_creator.py:41 in create_folder"
+          ]
+        },
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\test_project/dependency_demo/UnityGame": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\test_project/dependency_demo/UnityGame"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\file_creator.py:41 in create_folder"
+          ]
+        },
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\test_project/dependency_demo/UnityGame/Scripts": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\test_project/dependency_demo/UnityGame/Scripts"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\file_creator.py:41 in create_folder"
+          ]
+        }
+      },
+      "paths": []
+    },
+    "test_project/dependency_demo": {
+      "files": {
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\.": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\."
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\file_creator.py:41 in create_folder"
+          ]
+        }
+      },
+      "paths": [
+        {
+          "raw": "test_project/dependency_demo",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo",
+          "normalized": ".",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": ".",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": ".",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        }
+      ]
+    },
+    "test_project/dependency_demo/py_app": {
+      "files": {
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\file_creator.py:41 in create_folder"
+          ]
+        }
+      },
+      "paths": [
+        {
+          "raw": "test_project/dependency_demo/py_app",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app",
+          "normalized": "py_app",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "py_app",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "py_app",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        }
+      ]
+    },
+    "test_project/dependency_demo/py_app/utils": {
+      "files": {
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app/utils": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app/utils"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\file_creator.py:41 in create_folder"
+          ]
+        }
+      },
+      "paths": [
+        {
+          "raw": "test_project/dependency_demo/py_app/utils",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils",
+          "normalized": "py_app/utils",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "py_app/utils",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "py_app/utils",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        }
+      ]
+    },
+    "test_project/dependency_demo/py_app/utils/__init__.py": {
+      "files": {
+        "py_app/utils/__init__.py": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils\\__init__.py"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\code_writer.py:515 in write_file"
+          ]
+        },
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils\\__init__.py": {
+          "raws": [],
+          "write_count": 0,
+          "verifier": {
+            "status": "ok"
+          },
+          "call_sites": []
+        }
+      },
+      "paths": [
+        {
+          "raw": "test_project/dependency_demo/py_app/utils/__init__.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils\\__init__.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils\\__init__.py",
+          "normalized": "py_app/utils/__init__.py",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "py_app/utils/__init__.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils\\__init__.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        }
+      ]
+    },
+    "test_project/dependency_demo/py_app/utils/math_utils.py": {
+      "files": {
+        "py_app/utils/math_utils.py": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils\\math_utils.py"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\code_writer.py:657 in write_or_replace_block"
+          ]
+        },
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils\\math_utils.py": {
+          "raws": [],
+          "write_count": 0,
+          "verifier": {
+            "status": "error",
+            "error": "  File \"C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils\\math_utils.py\", line 1\n    Here is the corrected **`math_utils.py`** file.  \n                ^^^^^^^^^\nSyntaxError: invalid syntax\n"
+          },
+          "call_sites": []
+        }
+      },
+      "paths": [
+        {
+          "raw": "test_project/dependency_demo/py_app/utils/math_utils.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils\\math_utils.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils\\math_utils.py",
+          "normalized": "py_app/utils/math_utils.py",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "math_utils.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\math_utils.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/py_app/utils\\math_utils.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils\\math_utils.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "math_utils.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\math_utils.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/py_app/utils\\math_utils.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils\\math_utils.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/py_app/utils/math_utils.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils\\math_utils.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils\\math_utils.py",
+          "normalized": "py_app/utils/math_utils.py",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "py_app/utils/math_utils.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils\\math_utils.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "py_app/utils/math_utils.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\utils\\math_utils.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        }
+      ]
+    },
+    "test_project/dependency_demo/py_app/main.py": {
+      "files": {
+        "py_app/main.py": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\main.py"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\code_writer.py:657 in write_or_replace_block"
+          ]
+        },
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\main.py": {
+          "raws": [],
+          "write_count": 0,
+          "verifier": {
+            "status": "ok"
+          },
+          "call_sites": []
+        }
+      },
+      "paths": [
+        {
+          "raw": "test_project/dependency_demo/py_app/main.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\main.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\main.py",
+          "normalized": "py_app/main.py",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "main.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\main.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/py_app\\main.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\main.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "main.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\main.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/py_app\\main.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\main.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/py_app/main.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\main.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\main.py",
+          "normalized": "py_app/main.py",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "py_app/main.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\main.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "py_app/main.py",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\py_app\\main.py",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        }
+      ]
+    },
+    "test_project/dependency_demo/web": {
+      "files": {
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\file_creator.py:41 in create_folder"
+          ]
+        }
+      },
+      "paths": [
+        {
+          "raw": "test_project/dependency_demo/web",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web",
+          "normalized": "web",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "web",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "web",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        }
+      ]
+    },
+    "test_project/dependency_demo/web/utils": {
+      "files": {
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web/utils": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web/utils"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\file_creator.py:41 in create_folder"
+          ]
+        }
+      },
+      "paths": [
+        {
+          "raw": "test_project/dependency_demo/web/utils",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\utils",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\utils",
+          "normalized": "web/utils",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "web/utils",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\utils",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "web/utils",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\utils",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        }
+      ]
+    },
+    "test_project/dependency_demo/web/utils/format.ts": {
+      "files": {
+        "web/utils/format.ts": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\utils\\format.ts"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\code_writer.py:657 in write_or_replace_block"
+          ]
+        },
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\utils\\format.ts": {
+          "raws": [],
+          "write_count": 0,
+          "verifier": {
+            "status": "skipped",
+            "reason": "tsc not found: [WinError 2] The system cannot find the file specified"
+          },
+          "call_sites": []
+        }
+      },
+      "paths": [
+        {
+          "raw": "test_project/dependency_demo/web/utils/format.ts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\utils\\format.ts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\utils\\format.ts",
+          "normalized": "web/utils/format.ts",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "format.ts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\format.ts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/web/utils\\format.ts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\utils\\format.ts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "format.ts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\format.ts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/web/utils\\format.ts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\utils\\format.ts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/web/utils/format.ts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\utils\\format.ts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\utils\\format.ts",
+          "normalized": "web/utils/format.ts",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "web/utils/format.ts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\utils\\format.ts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "web/utils/format.ts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\utils\\format.ts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        }
+      ]
+    },
+    "test_project/dependency_demo/web/app.ts": {
+      "files": {
+        "web/app.ts": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\app.ts"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\code_writer.py:657 in write_or_replace_block"
+          ]
+        },
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\app.ts": {
+          "raws": [],
+          "write_count": 0,
+          "verifier": {
+            "status": "skipped",
+            "reason": "tsc not found: [WinError 2] The system cannot find the file specified"
+          },
+          "call_sites": []
+        }
+      },
+      "paths": [
+        {
+          "raw": "test_project/dependency_demo/web/app.ts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\app.ts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\app.ts",
+          "normalized": "web/app.ts",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "app.ts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\app.ts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/web\\app.ts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\app.ts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "app.ts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\app.ts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/web\\app.ts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\app.ts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/web/app.ts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\app.ts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\app.ts",
+          "normalized": "web/app.ts",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "web/app.ts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\app.ts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "web/app.ts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\web\\app.ts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        }
+      ]
+    },
+    "test_project/dependency_demo/UnityGame": {
+      "files": {
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\file_creator.py:41 in create_folder"
+          ]
+        }
+      },
+      "paths": [
+        {
+          "raw": "test_project/dependency_demo/UnityGame",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame",
+          "normalized": "UnityGame",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "UnityGame",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "UnityGame",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        }
+      ]
+    },
+    "test_project/dependency_demo/UnityGame/Scripts": {
+      "files": {
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame/Scripts": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame/Scripts"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\file_creator.py:41 in create_folder"
+          ]
+        }
+      },
+      "paths": [
+        {
+          "raw": "test_project/dependency_demo/UnityGame/Scripts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts",
+          "normalized": "UnityGame/Scripts",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "UnityGame/Scripts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "UnityGame/Scripts",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        }
+      ]
+    },
+    "test_project/dependency_demo/UnityGame/Scripts/Health.cs": {
+      "files": {
+        "UnityGame/Scripts/Health.cs": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Health.cs"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\code_writer.py:657 in write_or_replace_block"
+          ]
+        },
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Health.cs": {
+          "raws": [],
+          "write_count": 0,
+          "verifier": {
+            "status": "skipped",
+            "reason": "unsupported type: .cs"
+          },
+          "call_sites": []
+        }
+      },
+      "paths": [
+        {
+          "raw": "test_project/dependency_demo/UnityGame/Scripts/Health.cs",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Health.cs",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Health.cs",
+          "normalized": "UnityGame/Scripts/Health.cs",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "Health.cs",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\Health.cs",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/UnityGame/Scripts\\Health.cs",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Health.cs",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "Health.cs",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\Health.cs",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/UnityGame/Scripts\\Health.cs",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Health.cs",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/UnityGame/Scripts/Health.cs",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Health.cs",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Health.cs",
+          "normalized": "UnityGame/Scripts/Health.cs",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "UnityGame/Scripts/Health.cs",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Health.cs",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "UnityGame/Scripts/Health.cs",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Health.cs",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        }
+      ]
+    },
+    "test_project/dependency_demo/UnityGame/Scripts/Player.cs": {
+      "files": {
+        "UnityGame/Scripts/Player.cs": {
+          "raws": [
+            "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Player.cs"
+          ],
+          "write_count": 1,
+          "verifier": null,
+          "call_sites": [
+            "executor\\code_writer.py:657 in write_or_replace_block"
+          ]
+        },
+        "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Player.cs": {
+          "raws": [],
+          "write_count": 0,
+          "verifier": {
+            "status": "skipped",
+            "reason": "unsupported type: .cs"
+          },
+          "call_sites": []
+        }
+      },
+      "paths": [
+        {
+          "raw": "test_project/dependency_demo/UnityGame/Scripts/Player.cs",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Player.cs",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Player.cs",
+          "normalized": "UnityGame/Scripts/Player.cs",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "Player.cs",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\Player.cs",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/UnityGame/Scripts\\Player.cs",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Player.cs",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "Player.cs",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\Player.cs",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/UnityGame/Scripts\\Player.cs",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Player.cs",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "test_project/dependency_demo/UnityGame/Scripts/Player.cs",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Player.cs",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Player.cs",
+          "normalized": "UnityGame/Scripts/Player.cs",
+          "callsite": "executor\\step_executor.py:189 in _rel_path"
+        },
+        {
+          "raw": "UnityGame/Scripts/Player.cs",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Player.cs",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        },
+        {
+          "raw": "UnityGame/Scripts/Player.cs",
+          "normalized": "C:\\Users\\Hp\\3D Objects\\hope last\\test_project\\dependency2_demo\\UnityGame\\Scripts\\Player.cs",
+          "callsite": "executor\\step_executor.py:174 in _abs_path"
+        }
+      ]
+    }
+  }
+}
